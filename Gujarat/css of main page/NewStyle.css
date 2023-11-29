@@ -523,6 +523,373 @@ main#carousel {
   input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
   }
-  
 
+  /* Remove if error */
+  .bg-default {
+	background-color: #ffffff;
+}
+
+.post-classic-panel + .owl-carousel {
+	margin-top: 30px;
+}
+
+* + .owl-carousel {
+	margin-top: 30px;
+}
+
+.owl-carousel .animated {
+	animation-duration: 1000ms;
+	animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+	z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+	z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+	animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+	transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+	display: none;
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+	/* position relative and z-index fix webkit rendering fonts issue */
+	position: relative;
+	z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+	position: relative;
+	-ms-touch-action: pan-Y;
+}
+
+.owl-carousel .owl-stage:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+	position: relative;
+	overflow: hidden;
+	/* fix for flashing background */
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+	cursor: pointer;
+	user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+	display: block;
+}
+
+.owl-carousel.owl-loading {
+	opacity: 0;
+	display: block;
+}
+
+.owl-carousel.owl-hidden {
+	opacity: 0;
+}
+
+.owl-carousel .owl-refresh .owl-item {
+	display: none;
+}
+
+.owl-carousel .owl-item {
+	position: relative;
+	min-height: 1px;
+	float: left;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item .owl-item {
+	width: 100%;
+}
+
+.owl-carousel .owl-grab {
+	cursor: move;
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+	direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+	float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+	display: block;
+}
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item .owl-lazy {
+	opacity: 0;
+	transition: opacity 400ms ease;
+}
+
+/* 
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+	position: relative;
+	height: 100%;
+	background: #000000;
+}
+
+.owl-carousel .owl-video-play-icon {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	font: 400 40px/80px 'FontAwesome';
+	cursor: pointer;
+	z-index: 1;
+	transition: scale 100ms ease;
+}
+
+.owl-carousel .owl-video-play-icon:before {
+	content: '\f144';
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+	transform: scale(1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+	display: none;
+}
+
+.owl-carousel .owl-video-tn {
+	opacity: 0;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: opacity 400ms ease;
+}
+
+.owl-carousel .owl-video-frame {
+	position: relative;
+	z-index: 1;
+}
+
+.owl-modern {
+	margin-left: -15px;
+	margin-right: -15px;
+	width: auto;
+}
+
+.owl-modern .owl-stage-outer {
+	padding-top: 19px;
+	padding-bottom: 15px;
+}
+
+.owl-modern .owl-stage-outer::before, .owl-modern .owl-stage-outer::after {
+	position: absolute;
+	content: '';
+}
+
+.owl-modern .owl-stage-outer::before {
+	top: 0;
+	right: 55px;
+	left: 55px;
+	height: 18px;
+	background: #e8e8e8;
+	z-index: -1;
+}
+
+.owl-modern .owl-stage-outer::after {
+	top: 9px;
+	right: 30px;
+	left: 30px;
+	height: 9px;
+	background: #f4f4f4;
+	z-index: -1;
+}
+
+.owl-modern .owl-dots {
+	position: relative;
+	bottom: 0;
+	margin-top: 17px;
+}
+.quote-lisa-2 .quote-lisa-text::before, .quote-lisa-2 .quote-lisa-text::after {
+	color: #01b3a7;
+}
+
+.quote-lisa-2 .quote-lisa-cite a:hover {
+	color: #01b3a7;
+}
+
+.quote-lisa-2 .quote-lisa-status {
+	color: #50ba87;
+}
+
+.quote-lisa-body {
+	max-width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote-lisa-text {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.quote-lisa-text::before, .quote-lisa-text::after {
+	position: absolute;
+	font-size: 48px;
+	line-height: 1;
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+	color: #50ba87;
+}
+
+.quote-lisa-text::before {
+	left: 0;
+	top: 4px;
+	content: '\201C';
+}
+
+.quote-lisa-text::after {
+	right: 0;
+	bottom: -24px;
+	content: '\201D';
+}
+
+.quote-lisa-cite {
+	font-weight: 400;
+	letter-spacing: .075em;
+}
+
+.quote-lisa-cite a:hover {
+	color: #50ba87;
+}
+
+.quote-lisa-status {
+	color: #01b3a7;
+}
+
+* + .quote-lisa-status {
+	margin-top: 0;
+}
+
+* + .quote-lisa-text {
+	margin-top: 18px;
+}
+
+* + .quote-lisa-cite {
+	margin-top: 26px;
+}
+
+@media (min-width: 576px) {
+	.quote-lisa {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.quote-lisa-text {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	.quote-lisa {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.quote-lisa-body {
+	max-width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-circles {
+	border-radius: 50%;
+}
+.quote-lisa-2 .quote-lisa-text::before, .quote-lisa-2 .quote-lisa-text::after {
+	color: #01b3a7;
+}
+.quote-lisa-text {
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.quote-lisa-text::before, .quote-lisa-text::after {
+	position: absolute;
+	font-size: 48px;
+	line-height: 1;
+	font-family: "Montserrat", sans-serif, Arial, sans-serif;
+	color: #50ba87;
+}
+
+.quote-lisa-text::before {
+	left: 0;
+	top: 4px;
+	content: '\201C';
+}
+
+.quote-lisa-text::after {
+	right: 0;
+	bottom: -24px;
+	content: '\201D';
+}
+.quote-lisa-2 .quote-lisa-cite a:hover {
+	color: #01b3a7;
+}
+.quote-lisa-cite {
+	font-weight: 400;
+	letter-spacing: .075em;
+}
+
+.quote-lisa-cite a:hover {
+	color: #50ba87;
+}
+* + .quote-lisa-cite {
+	margin-top: 26px;
+}
 
