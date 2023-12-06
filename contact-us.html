@@ -137,6 +137,7 @@
                   <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric">
                   <label class="form-label" for="contact-phone-2">Phone</label>
                 </div>
+                <p class="text-danger" id="ValidatePhone" style="font-size: 12px;" hidden></p>
               </div>
               <div class="col-12">
                 <div class="form-wrap">
@@ -145,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <button class="button button-primary button-pipaluk" type="submit">Send Message</button>
+            <button class="button button-primary button-pipaluk" type="button" id="SendBtn" onclick="SendLeadForm()">Send Message</button>
           </form>
         </div>
       </section>
@@ -268,5 +269,59 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      function SendLeadForm() {
+        var PhoneNumber = $("#contact-phone-2").val();
+        var Length = PhoneNumber.trim().length;
+        if ($("#contact-phone-2").val() == "" || Length != 10) {
+          $("#ValidatePhone").text("Please give 10 digit number.");
+          $("#ValidatePhone").prop("hidden", false);
+        } else {
+          $("#ValidatePhone").prop("hidden", true);
+          var templateParams = {
+            from_name: $("#contact-your-name-2").val(),
+            email_id: $("#contact-email-2").val(),
+            contact_no: $("#contact-phone-2").val(),
+            package_name: "Sent From Main Page",
+            message: $("#contact-message-2").val(),
+            website: "Main Website",
+          };
+          $("#SendBtn").prop("disabled", true);
+          console.log(templateParams);
+          emailjs
+            .send(
+              "service_67t7hhj",
+              "template_thv6rqb",
+              templateParams,
+              "nmhVg3RXzbcSkzs_u"
+              // "service_v2o5j0l",
+              // "template_apvv4kv",
+              // templateParams,
+              // "3w5lxrQSjLVVLUx6_"
+            )
+            .then(
+              function (response) {
+                swal("Good job!", "Your Response Has been submited!", "success");
+                $("#contact-your-name-2").val("");
+                $("#contact-phone-2").val("");
+                $("#contact-message-2").val("");
+                $("#contact-email-2").val("");
+                $("#SendBtn").prop("disabled", false);
+              },
+              function (error) {
+                swal("Sorry!", "Its not your fault!", "error");
+                $("#SendBtn").prop("disabled", false);
+              }
+            );
+        }
+      }
+    </script>
   </body>
 </html>
