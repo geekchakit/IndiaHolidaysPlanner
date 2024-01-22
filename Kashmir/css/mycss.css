@@ -1,0 +1,73 @@
+#MineBntForm{font-size:18px;background:#003651;color:#fff;font-weight:700;padding:15px 50px !important;line-height:15px;border-radius:8px;position:relative;z-index:9;width:100%;display:inline-block;-webkit-transition:all .35s;transition:all .35s;-moz-transition:all .35s;-ms-transition:all .35s;text-transform:uppercase;border:none;margin-bottom:5px;letter-spacing:2px}#MineBntModal{font-size:18px;background:#003651;color:#fff;font-weight:700;padding:15px 50px !important;line-height:15px;border-radius:8px;position:relative;z-index:9;width:100%;display:inline-block;-webkit-transition:all .35s;transition:all .35s;-moz-transition:all .35s;-ms-transition:all .35s;text-transform:uppercase;border:none;margin-bottom:5px;letter-spacing:2px}#WhatsappBTNStillConfuseSec{font-size:18px;background:#fff;color:#003651;font-weight:700;padding:15px 50px !important;line-height:15px;border-radius:8px;position:relative;z-index:9;width:100%;display:inline-block;-webkit-transition:all .35s;transition:all .35s;-moz-transition:all .35s;-ms-transition:all .35s;text-transform:uppercase;border:none;margin-bottom:5px;letter-spacing:2px}
+#WhatsappBTNStillConfuseSec:hover{color:#fff;background:#25d366}
+
+.mymarquee {
+    padding: 10px 0px 10px 0px;
+    background-color: #ef9b11;
+    color: white;
+}
+
+.blinkers{
+    animation-name: BlinkingText;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+#FreeBlink{
+    animation-name: BlinkingText;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes BlinkingText{
+    from {color: darkorange;} to {color: red;}
+}
+
+@-webkit-keyframes blackWhite {  
+    0% { background-color: red; }
+    50% { background-color: orangered; }
+    51% { background-color: darkorange; }
+    100% { background-color: darkcyan; }
+  }
+  
+  #blinkDiv {
+      background-color: black;
+      -webkit-animation-name: blackWhite;  
+      -webkit-animation-iteration-count: infinite;  
+      -webkit-animation-duration: 2s; 
+  }   
+  
+
+  #ht-ctc-chat {
+    -webkit-animation: vibrate 0.32s cubic-bezier(.36, .07, .19, .97) infinite;
+    animation: vibrate 0.32s cubic-bezier(.36, .07, .19, .97) infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  
+  @keyframes vibrate {
+    0.50%, 90% {
+      -webkit-transform: translate3d(-0.5px, 0, 0);
+              transform: translate3d(-0.5px, 0, 0);
+    }
+  
+    0.50%, 80% {
+      -webkit-transform: translate3d(0.5px, 0, 0);
+              transform: translate3d(0.5px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      -webkit-transform: translate3d(-0.5px, 0, 0);
+              transform: translate3d(-0.5px, 0, 0);
+    }
+  
+    0.50%, 60% {
+      -webkit-transform: translate3d(0.5px, 0, 0);
+              transform: translate3d(0.5px, 0, 0);
+    }
+  }
+  
