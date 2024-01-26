@@ -7,7 +7,7 @@ function PackageEnquiry(PackageName) {
   localStorage.setItem("pkgname", PackageName);
 }
 
-function SendLead() {
+function SendLeadLegacy() {
   var PhoneNumber = $("#NumberModal").val();
   var Length = PhoneNumber.trim().length;
   if ($("#NumberModal").val() == "" || Length != 10) {
@@ -63,6 +63,49 @@ function SendLead() {
     } else {
       $("#ValidateRobotModel").prop("hidden", false);
       $("#ValidateRobotModel").text("Wrong Answer.");
+    }
+  }
+}
+
+function SendLead() {
+  var PhoneNumber = $("#NumberModal").val();
+  var Length = PhoneNumber.trim().length;
+  if ($("#NumberModal").val() == "" || Length != 10) {
+    $("#ValidatePhoneModel").text("Please give 10 digit number.");
+    $("#ValidatePhoneModel").prop("hidden", false);
+  } else {
+    if ($("#NoRobot").val() != "" && $("#NoRobot").val() == "4") {
+      $("#ValidatePhoneModel").prop("hidden", true);
+      $("#ValidateRobotModel").prop("hidden", true);
+      $("#MineBntModal").prop("disabled", true);
+      const data = {
+        name: $("#FullNameModal").val(),
+        message:$("#MessageModal").val(),
+        mobileNumber: $("#NumberModal").val(),
+        website: "Kashmir",
+        package: localStorage.getItem("pkgname"),
+      };
+
+      fetch("https://darshanrathbackend.onrender.com/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((response) => {
+        console.log(response);
+        swal("Good job!", "Your Response Has been submited!", "success");
+        $("#FullNameModal").val("");
+        $("#NumberModal").val("");
+        $("#MessageModal").val("");
+        $("#MineBntForm").prop("disabled", false);
+        localStorage.setItem(null);
+      });
+
+    } else {
+      $("#ValidateRobotModel").prop("hidden", false);
+      $("#ValidateRobotModel").text("Wrong Answer.");
+      $("#MineBntModal").prop("disabled", false);
     }
   }
 }
@@ -144,7 +187,7 @@ function SendLeadForm() {
         package: "Sent From Form",
       };
 
-      fetch("http://localhost:5000/api/sendEmail", {
+      fetch("https://darshanrathbackend.onrender.com/api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
