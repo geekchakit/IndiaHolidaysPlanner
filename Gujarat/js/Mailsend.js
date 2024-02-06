@@ -127,7 +127,6 @@ function SendLeadFormLegacy() {
 }
 
 function SendLead() {
-  alert("SendLead");
   var PhoneNumber = $("#NumberModal").val();
   var Length = PhoneNumber.trim().length;
   if ($("#NumberModal").val() == "" || Length != 10) {
@@ -160,6 +159,7 @@ function SendLead() {
         $("#MessageModal").val("");
         // $("#MineBntForm").prop("disabled", false);
         localStorage.setItem("pkgname",null);
+        return true;
       });
 
     } else {
@@ -203,6 +203,7 @@ function SendLeadForm() {
         $("#MessageForm").val("");
         // $("#MineBntForm").prop("disabled", false);
         localStorage.setItem("pkgname",null);
+        return true;
       });
 
     } else {
