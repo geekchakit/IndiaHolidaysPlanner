@@ -158,7 +158,7 @@ function SendLead() {
         $("#NumberModal").val("");
         $("#MessageModal").val("");
         $("#MineBntForm").prop("disabled", false);
-        localStorage.setItem(null);
+        localStorage.setItem("pkgname",null);
       });
 
     } else {
@@ -201,7 +201,7 @@ function SendLeadForm() {
         $("#NumberForm").val("");
         $("#MessageForm").val("");
         $("#MineBntForm").prop("disabled", false);
-        localStorage.setItem(null);
+        localStorage.setItem("pkgname",null);
       });
 
     } else {
