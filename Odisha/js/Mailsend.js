@@ -7,7 +7,7 @@ function PackageEnquiry(PackageName) {
   localStorage.setItem("pkgname", PackageName);
 }
 
-function SendLead() {
+function SendLeadLegacy() {
   var PhoneNumber = $("#NumberModal").val();
   var Length = PhoneNumber.trim().length;
   if ($("#NumberModal").val() == "" || Length != 10) {
@@ -67,7 +67,51 @@ function SendLead() {
   }
 }
 
-function SendLeadForm() {
+function SendLead() {
+  var PhoneNumber = $("#NumberModal").val();
+  var Length = PhoneNumber.trim().length;
+  if ($("#NumberModal").val() == "" || Length != 10) {
+    $("#ValidatePhoneModel").text("Please give 10 digit number.");
+    $("#ValidatePhoneModel").prop("hidden", false);
+  } else {
+    if ($("#NoRobot").val() != "" && $("#NoRobot").val() == "4") {
+      $("#ValidatePhoneModel").prop("hidden", true);
+      $("#ValidateRobotModel").prop("hidden", true);
+      $("#MineBntModal").prop("disabled", true);
+      const data = {
+        name: $("#FullNameModal").val(),
+        message:$("#MessageModal").val(),
+        mobileNumber: $("#NumberModal").val(),
+        website: "Odisha",
+        package: localStorage.getItem("pkgname"),
+      };
+
+      fetch("https://darshanrathbackend.onrender.com/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((response) => {
+        console.log(response);
+        swal("Good job!", "Your Response Has been submited!", "success");
+        $("#FullNameModal").val("");
+        $("#NumberModal").val("");
+        $("#MessageModal").val("");
+        $("#MineBntForm").prop("disabled", false);
+        localStorage.setItem("pkgname",null);
+        return true;
+      });
+
+    } else {
+      $("#ValidateRobotModel").prop("hidden", false);
+      $("#ValidateRobotModel").text("Wrong Answer.");
+      $("#MineBntModal").prop("disabled", false);
+    }
+  }
+}
+
+function SendLeadFormLegacy() {
   var PhoneNumber = $("#NumberForm").val();
   var Length = PhoneNumber.trim().length;
   if ($("#NumberForm").val() == "" || Length != 10) {
@@ -119,6 +163,48 @@ function SendLeadForm() {
             $("#MineBntForm").prop("disabled", false);
           }
         );
+    } else {
+      $("#ValidateRobotForm").text("Wrong Answer.");
+      $("#ValidateRobotForm").prop("hidden", false);
+    }
+  }
+}
+
+function SendLeadForm() {
+  var PhoneNumber = $("#NumberForm").val();
+  var Length = PhoneNumber.trim().length;
+  if ($("#NumberForm").val() == "" || Length != 10) {
+    $("#ValidatePhone").text("Please give 10 digit number.");
+    $("#ValidatePhone").prop("hidden", false);
+  } else {
+    if ($("#NoRobotForm").val() != "" && $("#NoRobotForm").val() == "4") {
+      $("#ValidateRobotForm").prop("hidden", true);
+      $("#ValidatePhone").prop("hidden", true);
+      const data = {
+        name: $("#FullNameForm").val(),
+        message: $("#MessageForm").val(),
+        mobileNumber: $("#NumberForm").val(),
+        website: "Odisha",
+        package: "Sent From Form",
+      };
+
+      fetch("https://darshanrathbackend.onrender.com/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).then((response) => {
+        console.log(response);
+        swal("Good job!", "Your Response Has been submited!", "success");
+        $("#FullNameForm").val("");
+        $("#NumberForm").val("");
+        $("#MessageForm").val("");
+        $("#MineBntForm").prop("disabled", false);
+        localStorage.setItem("pkgname",null);
+        return true;
+      });
+
     } else {
       $("#ValidateRobotForm").text("Wrong Answer.");
       $("#ValidateRobotForm").prop("hidden", false);
