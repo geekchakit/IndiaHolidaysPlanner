@@ -10,11 +10,12 @@ function PackageEnquiry(PackageName) {
 function SendLeadLegacy() {
   var PhoneNumber = $("#NumberModal").val();
   var Length = PhoneNumber.trim().length;
+  var NoRobot = "4";
   if ($("#NumberModal").val() == "" || Length != 10) {
     $("#ValidatePhoneModel").text("Please give 10 digit number.");
     $("#ValidatePhoneModel").prop("hidden", false);
   } else {
-    if ($("#NoRobot").val() != "" && $("#NoRobot").val() == "4") {
+    if (NoRobot != "" && NoRobot == "4") {
       $("#ValidatePhoneModel").prop("hidden", true);
       $("#ValidateRobotModel").prop("hidden", true);
       var templateParams = {
@@ -70,11 +71,12 @@ function SendLeadLegacy() {
 function SendLead() {
   var PhoneNumber = $("#NumberModal").val();
   var Length = PhoneNumber.trim().length;
+  var NoRobot = "4";
   if ($("#NumberModal").val() == "" || Length != 10) {
     $("#ValidatePhoneModel").text("Please give 10 digit number.");
     $("#ValidatePhoneModel").prop("hidden", false);
   } else {
-    if ($("#NoRobot").val() != "" && $("#NoRobot").val() == "4") {
+    if (NoRobot != "" && NoRobot == "4") {
       $("#ValidatePhoneModel").prop("hidden", true);
       $("#ValidateRobotModel").prop("hidden", true);
       $("#MineBntModal").prop("disabled", true);
@@ -118,8 +120,8 @@ function SendLeadFormLegacy() {
     $("#ValidatePhone").text("Please give 10 digit number.");
     $("#ValidatePhone").prop("hidden", false);
   } else {
-    if ($("#NoRobotForm").val() != "" && $("#NoRobotForm").val() == "4") {
-      //alert("True"+$("#NoRobot").val());
+    if (NoRobot != "" && NoRobot == "4") {
+      //alert("True"+NoRobot);
       $("#ValidateRobotForm").prop("hidden", true);
       $("#ValidatePhone").prop("hidden", true);
       var templateParams = {
@@ -173,11 +175,12 @@ function SendLeadFormLegacy() {
 function SendLeadForm() {
   var PhoneNumber = $("#NumberForm").val();
   var Length = PhoneNumber.trim().length;
+  var NoRobot = "4";
   if ($("#NumberForm").val() == "" || Length != 10) {
     $("#ValidatePhone").text("Please give 10 digit number.");
     $("#ValidatePhone").prop("hidden", false);
   } else {
-    if ($("#NoRobotForm").val() != "" && $("#NoRobotForm").val() == "4") {
+    if (NoRobot != "" && NoRobot == "4") {
       $("#ValidateRobotForm").prop("hidden", true);
       $("#ValidatePhone").prop("hidden", true);
       const data = {
