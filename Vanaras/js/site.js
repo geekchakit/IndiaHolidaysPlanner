@@ -13,11 +13,11 @@ function SendContactForm(FormType)
     };
      
     emailjs.send(
-      // 'service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u'
-      "service_v2o5j0l",
-      "template_apvv4kv",
-      templateParams,
-      "3w5lxrQSjLVVLUx6_"
+      'service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u'
+      // "service_v2o5j0l",
+      // "template_apvv4kv",
+      // templateParams,
+      // "3w5lxrQSjLVVLUx6_"
       )
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
@@ -41,11 +41,11 @@ function SendContactForm(FormType)
     };
      
     emailjs.send(
-      // 'service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u'
-      "service_v2o5j0l",
-      "template_apvv4kv",
-      templateParams,
-      "3w5lxrQSjLVVLUx6_"
+      'service_67t7hhj', 'template_thv6rqb', templateParams,'nmhVg3RXzbcSkzs_u'
+      // "service_v2o5j0l",
+      // "template_apvv4kv",
+      // templateParams,
+      // "3w5lxrQSjLVVLUx6_"
       )
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
