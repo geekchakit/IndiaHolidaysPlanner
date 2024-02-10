@@ -271,18 +271,18 @@
 	};
 
 
-	var dateForm = function() {
-		$('#date-start').datepicker();
-	};
+	// var dateForm = function() {
+	// 	$('#date-start').datepicker();
+	// };
 
-	var parallax = function() {
-		$(window).stellar({
-			horizontalScrolling: false,
-			hideDistantElements: false, 
-			responsive: true
+	// var parallax = function() {
+	// 	$(window).stellar({
+	// 		horizontalScrolling: false,
+	// 		hideDistantElements: false, 
+	// 		responsive: true
 
-		});
-	};
+	// 	});
+	// };
 
 
 	
@@ -297,8 +297,8 @@
 		goToTop();
 		loaderPage();
 		counterWayPoint();
-		dateForm();
-		parallax();
+		// dateForm();
+		// parallax();
 	});
 
 
