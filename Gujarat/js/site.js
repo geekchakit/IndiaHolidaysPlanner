@@ -30,6 +30,10 @@ function SendContactForm(FormType)
 
     else if(FormType=="ContactDiv")
     {
+      localStorage.setItem("ContactName",$("#fullnameC").val());
+      // localStorage.setItem("ContactEmail",$("#mailIdC").val());
+      localStorage.setItem("ContactPhone",$("#contactNoC").val());
+      localStorage.setItem("ContactMessage",$("#messageC").val());
       $("#SentResponse").prop('disabled',true);
       $("#SentFromContact").prop('disabled',true);
       var templateParams = {
@@ -49,6 +53,7 @@ function SendContactForm(FormType)
       )
         .then(function(response) {
             swal("Good job!", "Your Response Has been submited!", "success");
+            window.location.href = "thankyou.html";
             $("#SentResponse").prop('disabled',false);
             $("#SentFromContact").prop('disabled',false);
         }, function(error) {
