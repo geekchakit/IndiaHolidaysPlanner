@@ -19,6 +19,24 @@
             animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
+        .Copyright-div{
+            padding: 1rem !important;
+            margin-top: 3rem !important;
+
+        }
+
+        @media(max-width: 50.625em) {
+            .Copyright-div ul {
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+
+        @media (max-width: 38.125rem) {
+            .Copyright-div ul {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
         @-webkit-keyframes -amp-start {
             from {
                 visibility: hidden
@@ -7491,7 +7509,6 @@
         .Copyright-div {
             background-color: #f17329;
             color: #fff;
-            height: 30px;
             padding: 0 50px;
             width: 100%
         }
@@ -11873,7 +11890,7 @@
 
 @keyframes blinkingText {
     0% { color: #25d366; }   /* Light red */
-    25% { color: orangered; }  /* Light green */
+    25% { color: orangered; }  /* Light greens */
     50% { color: darkorange; }  /* Light blue */
     75% { color: darkcyan; }  /* Light orange */
     100% { color: #FF7F7F; } /* Light red */
@@ -16983,7 +17000,7 @@
 
                     <div class="row">
                         <div class="col-sm-4 col-xs-12">
-                            <div id="gtco-logo"><a href="index.html" style="color: #f17329;">Darshan Rath
+                            <div id="gtco-logo"><a href="index.html" style="color: #f17329;">Gujarat Tour
                             </div>
                         </div>
                         <div class="col-xs-8 text-right menu-1">
@@ -17099,30 +17116,6 @@
                     </div>
                 </div>
             </header>
-            <div class="gtco-section About" id="AboutTour">
-                <div class="gtco-container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-                            <h2 class="H1Modified">About Gujarat Tour</h2>
-                            <!-- <p style="text-align: justify;">
-                                Leading tour operator India Darshan Rath is situated in Gujarat and aims
-                                to provide interesting trip packages for Jaipur, Udaipur, Jodhpur, Jaisalmer, Bikaner
-                                and other travel destinations, all while creating high standards for travel. Our area of
-                                expertise is Gujarat travel packages.
-
-                                Travel to Gujarat has a lot to offer, and India Darshan Rath provides the
-                                best Gujarat tour packages at reasonable prices. Explore the rich cultural heritage,
-                                majestic forts, vibrant festivals, and stunning landscapes of Gujarat with our curated
-                                travel experiences. Our Gujarat packages include visits to Jaipur, Udaipur, Jodhpur,
-                                Jaisalmer, Pushkar, Bikaner, and Mount Abu, ensuring a comprehensive and memorable
-                                journey through this enchanting state.
-                            </p> -->
-                            <p style="text-align: justify;">Leading tour operator Darshan Rath is situated in Gujarat and aims to provide interesting trip packages for Ahmedabad, Dwarka, Gir National Park, Kutch, Somnath, and other travel destinations, all while creating high standards for travel. Our area of expertise is Gujarat travel packages.<span id="dots">...</span><span id="more">Travel to Gujarat has a lot to offer, and India Darshan Rath provides the best Gujarat tour packages at reasonable prices. Explore the rich cultural heritage, majestic forts, vibrant festivals, and stunning landscapes of Gujarat with our curated travel experiences. Our Gujarat packages include visits to Ahmedabad, Dwarka, Gir National Park, Kutch, Somnath, Bhuj, and Saputara, ensuring a comprehensive and memorable journey through this enchanting state.</span></p>
-                            <button class="btn-primary btn-block" onclick="myFunction()" id="myBtn">Read more</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- <div id="GujaratPackageDiv">
                 <div class="gtco-container">
                     <div class="row">
@@ -18364,7 +18357,30 @@
                     </div>
                 </div>
             </div>
+            <div class="gtco-section About" id="AboutTour">
+                <div class="gtco-container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                            <h2 class="H1Modified">About Gujarat Tour</h2>
+                            <!-- <p style="text-align: justify;">
+                                Leading tour operator India Gujarat Tour is situated in Gujarat and aims
+                                to provide interesting trip packages for Jaipur, Udaipur, Jodhpur, Jaisalmer, Bikaner
+                                and other travel destinations, all while creating high standards for travel. Our area of
+                                expertise is Gujarat travel packages.
 
+                                Travel to Gujarat has a lot to offer, and India Gujarat Tour provides the
+                                best Gujarat tour packages at reasonable prices. Explore the rich cultural heritage,
+                                majestic forts, vibrant festivals, and stunning landscapes of Gujarat with our curated
+                                travel experiences. Our Gujarat packages include visits to Jaipur, Udaipur, Jodhpur,
+                                Jaisalmer, Pushkar, Bikaner, and Mount Abu, ensuring a comprehensive and memorable
+                                journey through this enchanting state.
+                            </p> -->
+                            <p style="text-align: justify;">Leading tour operator Gujarat Tour is situated in Gujarat and aims to provide interesting trip packages for Ahmedabad, Dwarka, Gir National Park, Kutch, Somnath, and other travel destinations, all while creating high standards for travel. Our area of expertise is Gujarat travel packages.<span id="dots">...</span><span id="more">Travel to Gujarat has a lot to offer, and India Gujarat Tour provides the best Gujarat tour packages at reasonable prices. Explore the rich cultural heritage, majestic forts, vibrant festivals, and stunning landscapes of Gujarat with our curated travel experiences. Our Gujarat packages include visits to Ahmedabad, Dwarka, Gir National Park, Kutch, Somnath, Bhuj, and Saputara, ensuring a comprehensive and memorable journey through this enchanting state.</span></p>
+                            <button class="btn-primary btn-block" onclick="myFunction()" id="myBtn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="gtco-section" id="GujaratBestAttraction">
                 <div class="gtco-container">
                     <div class="row">
@@ -18599,10 +18615,64 @@
         <a href="tel:918320746114" class="float-call" target="_blank">
             <i class="bi bi-telephone my-float-call" style="font-size: 35px;"></i>
         </a>
-        <div class="Copyright-div text-center">
-            <!-- <a style="color: white;" href="https://darshanrathholidays.com/">@2023 darshanrathholidays.com</a> |
-            Designed &
-            Developed By India Darshan Rath -->
+        <div class="Copyright-div text-center" style="background-color: #f17329">
+            <p>Contact us for:</p>
+            <ul style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Delhi."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Delhi</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Mumbai."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Mumbai</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Chennai."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Chennai</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Kolkata."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Kolkata</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Bangalore."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Bangalore</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Bhopal."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Bhopal</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Guwahati."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Guwahati</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Kochi."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Kochi</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Lucknow."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Lucknow</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Amritsar."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Amritsar</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Bhubaneswar."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Bhubaneswar</a>
+                </li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Coimbatore."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Coimbatore</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Jaipur."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Jaipur</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Hyderabad."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Hyderabad</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Chandigarh."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Chandigarh</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Dehradun."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Dehradun</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Bangalore."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Bangalore</a></li>
+        
+                <li><a href="https://wa.me/919898895766?text=Hello!%20I%20am%20interested%20in%20Gujarat%20Tour%20Packages%20from%20Pune."
+                        target="_blank" style="text-decoration:none;color:white;">Gujarat Tour Packages from Pune</a></li>
+            </ul>
         </div>
         <!-- </div> -->
 
@@ -18781,7 +18851,7 @@
             }
 
             window.onload = function () {
-                // alert("Welcome to Darshan Rath Holidays");
+                // alert("Welcome to Gujarat Tour Holidays");
                // $('#CallModel').modal('show');
             };
 
