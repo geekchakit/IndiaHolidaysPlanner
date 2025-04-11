@@ -1,208 +1,233 @@
 [
   {
-    "packageTitle": "Nainital Jim Corbett Trip",
+    "packageTitle": "Dwarka Somnath Trip",
     "offer": "📢 Special Offers 50% Off 📢",
     "duration": "3 Nights 4 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "image": "./public/assets/Somanath_mandir.jpg",
+    "highlights": "1 DHAM + 2 JYOTIRLINGA COVERED",
     "packageInclusion": {
       "readMore": [
-      "Pick up/drop from airport/railway station/bus stand",
-      "2 night stay and sightseeing in Nainital",
-      "1 night stay and sightseeing in Jim Corbett",
-      "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 14 more points to cover",
-      "Customize this package with our Uttarakhand travel expert for free"
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Dwarka",
+        "1 night stay and sightseeing in Somnath",
+        "Highlights - Dwarkadheesh Dham, Nageshwar Jyotirlinga, Somnath Jyotirlinga & 14 more famous points included",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
-      "Pick up/drop from airport/railway station/bus stand",
-      "2 night stay and sightseeing in Nainital"
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
+    },
+    "price": 5999
   },
   {
-    "packageTitle": "Nainital Jim Corbett Ranikhet Trip",
+    "packageTitle": "Dwarka Somnath with Ahmedabad Trip",
     "offer": "📢 Special Offers 50% Off 📢",
     "duration": "4 Nights 5 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett_Ranikhet.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "image": "./public/assets/Gujarat-Dwarka.avif",
+    "highlights": "1 DHAM + 2 JYOTIRLINGA + 1 UNESCO WORLD HERITAGE CITY",
     "packageInclusion": {
       "readMore": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett",
-        "1 night stay and sightseeing in Ranikhet",
-        "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 18 more points to cover",
-        "Customize this package with our Uttarakhand travel expert for free"
+        "2 night stay and sightseeing in Dwarka",
+        "1 night stay and sightseeing in Somnath",
+        "1 night stay and sightseeing in Ahmedabad",
+        "Highlights - Dwarkadheesh Dham, Nageshwar Jyotirlinga, Somnath Jyotirlinga, Ahmedabad Local & 18 more famous points included",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett"
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
+    },
+    "price": 6999
   },
   {
-    "packageTitle": "Nainital Jim Corbett Ranikhet Kausani Trip",
+    "packageTitle": "Dwarka Somnath with Statue of Unity Trip",
     "offer": "📢 Special Offers 50% Off 📢",
     "duration": "5 Nights 6 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett_Ranikhet_Kausani.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "image": "./public/assets/unity.jpg",
+    "highlights": "1 DHAM + 2 JYOTIRLINGA + WORLD'S TALLEST STATUE",
     "packageInclusion": {
       "readMore": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett",
-        "1 night stay and sightseeing in Kausani",
-        "1 night stay and sightseeing in Ranikhet",
-        "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 25 more points to cover",
-        "Customize this package with our Uttarakhand travel expert for free"
+        "2 night stay and sightseeing in Dwarka",
+        "1 night stay and sightseeing in Somnath",
+        "1 night stay and sightseeing in Ahmedabad",
+        "1 night stay near Statue of Unity",
+        "Highlights - Dwarkadheesh Dham, Nageshwar Jyotirlinga, Somnath Jyotirlinga, Statue of Unity Tour & 24 more famous points included",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett"
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink":"https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
-  },
-  {
-    "packageTitle": "Nainital Jim Corbett with Mussoorie Trip",
-    "offer": "📢 Special Offers 50% Off 📢",
-    "duration": "5 Nights 6 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett_Mussoorie.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
-    "packageInclusion": {
-      "readMore": [
-        "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett",
-        "2 night stay and sightseeing in Mussoorie",
-        "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 35 more points to cover",
-        "Customize this package with our Uttarakhand travel expert for free"
-      ],
-      "readLess": [
-        "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett"
-      ]
     },
-    "justPlanningLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
-    "rating": {
-      "value": 4.8,
-      "text": "4.8+ Ratings"
-    }
+    "price": 7999
   },
   {
-    "packageTitle": "Nainital Jim Corbett with Mussoorie Trip",
+    "packageTitle": "Dwarka Somnath Gir, Statue, Diu",
     "offer": "📢 Special Offers 50% Off 📢",
     "duration": "6 Nights 7 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett_Mussoorie.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "image": "./public/assets/DWARKA-SOMNATH-TOUR-PACKAGE.png",
+    "highlights": "1 DHAM + 2 JYOTIRLINGA + WORLD'S TALLEST STATUE + WORLD'S ONLY ASIATIC SAFARI",
     "packageInclusion": {
       "readMore": [
-      "Pick up/drop from airport/railway station/bus stand",
-      "2 night stay and sightseeing in Nainital",
-      "1 night stay and sightseeing in Jim Corbett",
-      "2 night stay and sightseeing in Mussoorie",
-      "1 night stay in Dehradun",
-      "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 44 more points to cover",
-      "Customize this package with our Uttarakhand travel expert for free"
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Dwarka",
+        "1 night stay and sightseeing in Somnath",
+        "1 night stay and sightseeing in Ahmedabad",
+        "1 night stay near Statue of Unity",
+        "1 night stay in Gir",
+        "1 night stay in Diu",
+        "Highlights - Dwarkadheesh Dham, Nageshwar Jyotirlinga, Somnath Jyotirlinga, Statue of Unity Tour, Asiatic Lion Safari, Diu & 35 more famous points included",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
-      "Pick up/drop from airport/railway station/bus stand",
-      "2 night stay and sightseeing in Nainital",
-      "1 night stay and sightseeing in Jim Corbett"
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
+    },
+    "price": 8999
   },
   {
-    "packageTitle": "Nainital Jim Corbett Mussoorie with Haridwar Trip",
+    "packageTitle": "Dwarka Somnath with Bhavnagar",
     "offer": "📢 Special Offers 50% Off 📢",
     "duration": "7 Nights 8 Days (Free Customization)",
-    "image": "./public/assets/Nainital_JimCorbett_Mussoorie_Haridwar.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "image": "./public/assets/lion.jpg",
+    "highlights": "1 DHAM + 2 JYOTIRLINGA + UNDERWATER SHIVA TEMPLE",
     "packageInclusion": {
       "readMore": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett",
-        "2 night stay and sightseeing in Mussoorie",
-        "1 night stay in Haridwar/Rishikesh",
-        "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 55 more points to cover",
-        "Customize this package with our Uttarakhand travel expert for free"
+        "2 night stay and sightseeing in Dwarka",
+        "1 night stay and sightseeing in Somnath",
+        "1 night stay and sightseeing in Ahmedabad",
+        "1 night stay near Statue of Unity",
+        "1 night stay in Gir",
+        "1 night stay in Diu",
+        "Highlights - Dwarkadheesh Dham, Nageshwar Jyotirlinga, Somnath Jyotirlinga, Nishkalank Mahadev Temple & more famous points included",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett"
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
+    },
+    "price": 9999
   },
   {
-    "packageTitle": "Complete Uttarakhand Trip",
+    "packageTitle": "Panch Dwarka Tour Package",
     "offer": "📢 Special Offers 50% Off 📢",
-    "duration": "8 Nights 9 Days (Free Customization)",
-    "image": "./public/assets/Kedarnath_Temple.jpg",
-    "highlights": "ZERO CANCELLATION |EASY REFUND",
+    "duration": "7 Nights 8 Days (Free Customization)",
+    "image": "./public/assets/Best Of Archeological.jpg",
+    "highlights": "DWARKA + BHET + DAKOR + NATHDWARA + KANKROLI",
     "packageInclusion": {
       "readMore": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett",
-        "2 night stay and sightseeing in Mussoorie",
-        "1 night stay in Haridwar/Rishikesh",
-        "1 night stay in Dehradun",
-        "Highlights – Eco cave Garden, Naini lake, Tiffin Top, Naina Devi Temple, Jim Corbett safari and 55 more points to cover",
-        "Customize this package with our Uttarakhand travel expert for free"
+        "2 night stay and sightseeing in Dwarka",
+        "2 night stay and sightseeing in Udaipur",
+        "2 night stay and sightseeing in Ahmedabad",
+        "1 night stay in Vadodara",
+        "Highlights - Dwarka + Bhet + Dakor + Nathdwara + Kankroli",
+        "Customize this package with our Gujarat expert for free"
       ],
       "readLess": [
         "Pick up/drop from airport/railway station/bus stand",
-        "2 night stay and sightseeing in Nainital",
-        "1 night stay and sightseeing in Jim Corbett"
+        "2 night stay and sightseeing in Dwarka"
       ]
     },
-    "justPlanningLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I'm+just+planning+the+trip,+please+share+the+details&type=phone_number&app_absent=0",
-    "myDateIsFixedLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+my+date+is+fixed,+share+me+the+best+packages+quote+and+details&type=phone_number&app_absent=0",
-    "contactLink": "tel:+918320746114",
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
-    }
+    },
+    "price": 10999
+  },
+  {
+    "packageTitle": "Ran Utsav",
+    "offer": "📢 Special Offers 50% Off 📢",
+    "duration": "2 Nights 3 Days (Free Customization)",
+    "highlights": "KUTCH + BHUJ + KUTCHI HANDICRAFT VILLAGE TOUR",
+    "image": "./public/assets/Dwarka-Devsthan-Samiti.jpg",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bhuj",
+        "1 night stay and sightseeing in Kutch",
+        "Highlights - White Rann Safari, Kalo Dungar, Village Handicraft Tour",
+        "Customize this package with our Gujarat expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bhuj"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS IN WHATSAAP",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 11999
+  },
+  {
+    "packageTitle": "Ran Utsav",
+    "offer": "📢 Special Offers 50% Off 📢",
+    "duration": "3 Nights 4 Days (Free Customization)",
+    "highlights": "KUTCH + MANDVI + KUTCHI HANDICRAFT VILLAGE TOUR",
+    "image": "./public/assets/Bhandardara-Fireflies-Camping-6-2-720x480.jpg",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bhuj",
+        "1 night stay and sightseeing in Kutch",
+        "Highlights - White Rann Safari, Kalo Dungar, Village Handicraft Tour",
+        "Customize this package with our Gujarat expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bhuj"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS IN WHATSAAP",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Gujarat+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 12999
   }
 ]
