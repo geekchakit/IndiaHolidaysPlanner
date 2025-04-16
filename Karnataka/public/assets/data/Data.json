@@ -1,0 +1,227 @@
+[
+  {
+    "packageTitle": "Mysore and Coorg Trip",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "3 Nights 4 Days",
+    "image": "./public/assets/mysoorpalace.jfif",
+    "highlights": "1N Mysore (Historic City) + 2N Coorg (Scotland of India)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Coorg",
+        "1 night stay and sightseeing in Mysore",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Coorg"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 5999
+  },
+  {
+    "packageTitle": "Mysore and Coorg with Bangalore Trip",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "4 Nights 5 Days (Free Customization)",
+    "image": "./public/assets/banglore_palace.jfif",
+    "highlights": "1N Mysore + 2N Coorg + 1N Bangalore (Garden City)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Coorg",
+        "1 night stay and sightseeing in Bangalore",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Bangalore Aquarium, Halasuru Someshwara Temple, Bangalore Palace and many more",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 6999
+  },
+  {
+    "packageTitle": "Mysore Coorg with Ooty",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "5 Nights 6 Days (Free Customization)",
+    "image": "./public/assets/coorg.jfif",
+    "highlights": "1N Mysore + 2N Coorg + 2N Ooty with Coonoor (Hill Station)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Coorg",
+        "2 night stay and sightseeing in Ooty",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Rose Garden, Ooty Lake, Botanical Garden including Coonoor, Sim’s Park, Lam’s Rock, Dolphin Nose, Ketti Valley & 24 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 7999
+  },
+  {
+    "packageTitle": "Bangalore Mysore Coorg and Ooty with Coonoor",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "6 Nights 7 Days (Free Customization)",
+    "image": "./public/assets/Coonoor.jfif",
+    "highlights": "1N Bangalore + 1N Mysore + 2N Coorg + 2N Ooty with Coonoor (Hill Station)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bangalore",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Coorg",
+        "2 night stay and sightseeing in Ooty",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Bangalore Aquarium, Halasuru Someshwara Temple, Bangalore Rose Garden, Ooty Lake, Botanical Garden including Coonoor, Sim’s Park, Lam’s Rock, Dolphin Nose, Ketti Valley & 15 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Bangalore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 8999
+  },
+  {
+    "packageTitle": "Mysore Coorg Ooty Kodaikanal",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "7 Nights 8 Days (Free Customization)",
+    "image": "./public/assets/Kodaikanal.jfif",
+    "highlights": "1N Bangalore + 1N Mysore + 2N Coorg + 2N Ooty with Coonoor + 1N Kodaikanal (Princess of Hills)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Coorg",
+        "2 night stay and sightseeing in Ooty",
+        "2 night stay and sightseeing in Kodaikanal",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Rose Garden, Ooty Lake, Botanical Garden including Coonoor, Sim’s Park, Lam’s Rock, Dolphin Nose, Ketti Valley, Cokers Walk, Pillars Rocks, Green Valley, Brynt’s Park & 15 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 9999
+  },
+  {
+    "packageTitle": "Mysore Coorg Ooty Wayanad Tour Package",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "7 Nights 8 Days (Free Customization)",
+    "image": "./public/assets/ooty.avif",
+    "highlights": "1N Mysore + 2N Coorg + 2N Ooty + 2N Wayanad",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Coorg",
+        "2 night stay and sightseeing in Ooty",
+        "2 night stay and sightseeing in Wayanad",
+        "Highlights - Mysore Palace, Chamundi Hill, Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Rose Garden, Ooty Lake, Botanical Garden including Coonoor, Sim’s Park, Lam’s Rock, Dolphin Nose, Ketti Valley, Thirunelli Temple, Pookode Lake, Lakkadi, Kuruva Island, Edakkal Cave & 15 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 10999
+  },
+  {
+    "packageTitle": "Bangalore Coorg Chikkamagaluru",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "4 Nights 5 Days (Free Customization)",
+    "image": "./public/assets/Chikkamagaluru.jpg",
+    "highlights": "2N Coorg + 2N Chikkamagaluru (Beauty Hill of Karnataka)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Coorg",
+        "2 night stay and sightseeing in Chikkamagaluru",
+        "Highlights - Nagarhole Tiger Reserve, Raja Seat, Abbey Falls, Baba Budan Giri Hill, Hebbe Fall, Kemmangundi and many more",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "2 night stay and sightseeing in Coorg"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 11999
+  }
+]
