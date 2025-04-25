@@ -24,6 +24,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -56,6 +57,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -88,6 +90,39 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 7999
+  },
+  {
+    "packageTitle": "Gokarna-Murudeshwara-Udupi",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "3 Nights 4 Days (Free Customization)",
+    "image": "./public/assets/gokarna.webp",
+    "highlights": "2N Gokarna + 1N Udupi",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Udupi",
+        "2 night stay and sightseeing in Gokarna",
+        "Highlights - Gokarna, Idagunji, Murudeshwara, Udupi Temples and St Mary's Island",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Udupi"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS WITH PRICE",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -121,6 +156,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -154,6 +190,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -187,6 +224,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
@@ -218,6 +256,7 @@
       "color": "green"
     },
     "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
     "rating": {
       "value": 4.8,
       "text": "4.8+ Ratings"
