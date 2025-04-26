@@ -1875,10 +1875,11 @@
                 document.getElementById('emailModel').value = '';
                 document.getElementById('phoneModel').value = '';
                 document.getElementById('messageModel').value = '';
-                document.getElementById('submitbutton').disabled = false;
+                document.getElementById('submitbuttonModel').disabled = false; // Correct button ID
                 closeModal();
             }, function (error) {
                 swal("Sorry!", "It's not your fault!", "error");
+                document.getElementById('submitbuttonModel').disabled = false; // Re-enable button on error
             });
         }
     </script>

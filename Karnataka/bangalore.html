@@ -1860,10 +1860,11 @@
                 document.getElementById('emailModel').value = '';
                 document.getElementById('phoneModel').value = '';
                 document.getElementById('messageModel').value = '';
-                document.getElementById('submitbutton').disabled = false;
+                document.getElementById('submitbuttonModel').disabled = false; // Correct button ID
                 closeModal();
             }, function (error) {
                 swal("Sorry!", "It's not your fault!", "error");
+                document.getElementById('submitbuttonModel').disabled = false; // Re-enable button on error
             });
         }
     </script>
@@ -2014,7 +2015,7 @@
                     ${item.price} (Onwards)
                 </div>
                 <div class="group grou-row">
-                                        <a href="${item.callLink}" class="btn pbtn" style="background-color: green;">
+                                        <a href="${item.callLink}" class="btn pbtn" style="background-color: #000080;">
                         <div class="ico">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path
@@ -2023,7 +2024,7 @@
                         </div>
                         <span>Call Now</span>
                     </a>
-                    <button onclick="openModal()" class="btn pbtn" style="background-color: green;">
+                    <button onclick="openModal()" class="btn pbtn" style="background-color: #F5761A;">
                         <div class="ico">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                         <path
