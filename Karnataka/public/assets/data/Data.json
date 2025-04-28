@@ -1,5 +1,37 @@
 [
   {
+    "packageTitle": "Ooty Mysore Trip",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "3 Nights 4 Days (Customizable)",
+    "image": "./public/assets/ooty.avif",
+    "highlights": "2N Ooty (Queen of Hill Station) + 1N Mysore",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Ooty",
+        "Highlights - Mysore Palace, Chamundi Hill, Brindavan Gardens, Raja Seat, Abbey Falls, Rose Garden, Ooty Lake, Botanical Garden, Doddabetta Peak, Tea Factory, Murugan Temple, Pykara Waterfall, & 15 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS IN WHATSAPP",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 6999
+  },
+  {
     "packageTitle": "Mysore and Coorg Trip",
     "offer": "📢 Special Offers 15% Off 📢",
     "duration": "3 Nights 4 Days",
@@ -262,5 +294,37 @@
       "text": "4.8+ Ratings"
     },
     "price": 11999
+  },
+  {
+    "packageTitle": "Peaceful Ooty Honeymoon",
+    "offer": "📢 Special Offers 15% Off 📢",
+    "duration": "3 Nights 4 Days (Customizable)",
+    "image": "./public/assets/ooty.avif",
+    "highlights": "3N Ooty (Queen of Hill Station)",
+    "amenities": ["Hotel", "Cab", "Meals"],
+    "packageInclusion": {
+      "readMore": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore",
+        "2 night stay and sightseeing in Ooty",
+        "Highlights - Ooty Lake, Botanical Garden, Doddabetta Peak, Tea Factory, Murugan Temple, Pykara Waterfall, & 15 more famous points included",
+        "Customize this package with our Karnataka expert for free"
+      ],
+      "readLess": [
+        "Pick up/drop from airport/railway station/bus stand",
+        "1 night stay and sightseeing in Mysore"
+      ]
+    },
+    "button": {
+      "text": "GET FULL DETAILS IN WHATSAPP",
+      "color": "green"
+    },
+    "contactLink": "https://api.whatsapp.com/send/?phone=918320746114&text=Hello+I+need+Karnataka+Tour&type=phone_number&app_absent=0",
+    "callLink": "tel:+919998768210",
+    "rating": {
+      "value": 4.8,
+      "text": "4.8+ Ratings"
+    },
+    "price": 7999
   }
 ]
