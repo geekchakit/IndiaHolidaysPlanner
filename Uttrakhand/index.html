@@ -1178,6 +1178,614 @@
 
         /*# sourceMappingURL=main.min.css.map */
     </style>
+
+<style amp-custom>
+    /* Modal trigger button styling */
+    #openModalBtn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #2e316c;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: all 0.3s;
+    }
+
+    #openModalBtn:hover {
+        background-color: #373a87;
+        transform: translateY(-2px);
+    }
+
+    /* Modal overlay */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .modal-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Reset styles scoped to form elements */
+    #bookingModal * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Modal styling */
+    #bookingModal {
+        width: 90%;
+        max-width: 700px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    .modal-overlay.active #bookingModal {
+        transform: translateY(0);
+    }
+
+    #bookingModal .modal-header,
+    #bookingModal .modal-footer {
+        background-color: #2e316c;
+        color: white;
+        padding: 24px;
+    }
+
+    #bookingModal .modal-header {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        padding-right: 40px; /* Space for close button */
+    }
+
+    #bookingModal .modal-header h2 {
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Close button */
+    #closeModalBtn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+    }
+
+    #closeModalBtn:hover {
+        transform: scale(1.1);
+    }
+
+    #bookingModal .modal-body {
+        background-color: white;
+        padding: 30px;
+    }
+
+    /* Form layout grid */
+    #bookingModal .form-row {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 24px;
+    }
+
+    #bookingModal .form-group {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #bookingModal .form-group.full-width {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #bookingModal label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: #333;
+        font-size: 15px;
+    }
+
+    #bookingModal input[type="text"],
+    #bookingModal input[type="email"],
+    #bookingModal input[type="tel"],
+    #bookingModal select,
+    #bookingModal input[type="checkbox"] {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    }
+
+    #bookingModal input:focus,
+    #bookingModal select:focus,
+    #bookingModal input[type="checkbox"]:focus {
+        outline: none;
+        border-color: #2e316c;
+        box-shadow: 0 0 0 3px rgba(46, 49, 108, 0.15);
+    }
+
+    /* Checkbox styling */
+    #bookingModal .checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #bookingModal .checkbox-wrapper input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 4px;
+        margin-right: 10px;
+        position: relative;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    #bookingModal .checkbox-wrapper input[type="checkbox"]:checked {
+        background-color: #2e316c;
+        border-color: #2e316c;
+    }
+
+    #bookingModal .checkbox-wrapper input[type="checkbox"]:checked::after {
+        content: "✔";
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #bookingModal .checkbox-wrapper label {
+        margin-bottom: 0;
+        font-weight: 600;
+        color: #333;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #bookingModal .checkbox-wrapper .contact-methods {
+        color: #00C853; /* Green color from image */
+        font-weight: 600;
+        margin-left: 4px;
+    }
+
+    /* Departure option buttons */
+    #bookingModal .departure-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    #bookingModal .departure-btn {
+        flex: 1 1 calc(33.333% - 12px);
+        min-width: 100px;
+        background-color: #f5f5f5;
+        color: #333;
+        border: 2px solid #e0e0e0;
+        padding: 12px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 0.3s;
+        text-align: center;
+    }
+
+    #bookingModal .departure-btn:hover {
+        background-color: #eef0ff;
+        border-color: #bbbdd6;
+    }
+
+    #bookingModal .departure-btn.active {
+        background-color: #2e316c;
+        color: white;
+        border-color: #2e316c;
+    }
+
+    /* Submit button */
+    #bookingModal .btn {
+        background-color: white;
+        color: #2e316c;
+        border: none;
+        padding: 14px 30px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: all 0.3s;
+        box-shadow: 0 4px 12px rgba(46, 49, 108, 0.2);
+        margin: 0 16px 0 0;
+    }
+
+    #bookingModal .btn:hover {
+        background-color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(46, 49, 108, 0.25);
+    }
+
+    #bookingModal .btn:active {
+        transform: translateY(0);
+    }
+
+    #bookingModal .error-message {
+        color: #e74c3c;
+        font-size: 14px;
+        margin-top: 8px;
+        display: none;
+    }
+
+    #bookingModal .required::after {
+        content: " *";
+        color: #e74c3c;
+    }
+
+    #bookingModal .modal-footer {
+        display: flex;
+        justify-content: flex-end;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        #bookingModal {
+            width: 95%;
+            max-width: none;
+            border-radius: 8px;
+            margin: 0 8px;
+        }
+
+        #bookingModal .modal-body {
+            padding: 12px; /* Compact padding */
+            max-height: none; /* No scrolling */
+            overflow-y: visible;
+        }
+
+        #bookingModal .modal-header,
+        #bookingModal .modal-footer {
+            padding: 10px; /* Compact padding */
+            padding-right: 36px; /* Space for close button */
+        }
+
+        #bookingModal .modal-header h2 {
+            font-size: 18px; /* Smaller header text */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #bookingModal .form-row {
+            flex-direction: row; /* Two fields per row */
+            flex-wrap: wrap;
+            gap: 10px; /* Smaller gap */
+            margin-bottom: 14px; /* Smaller margin */
+        }
+
+        #bookingModal .form-group {
+            flex: 1 1 45%; /* Two fields side by side */
+            min-width: 120px; /* Minimum width for fields */
+            margin-bottom: 14px;
+        }
+
+        #bookingModal .form-group.full-width {
+            flex: 1 1 100%; /* Full-width for package, departure, and contact */
+            margin-bottom: 14px;
+        }
+
+        #bookingModal label {
+            font-size: 12px; /* Smaller label text */
+            margin-bottom: 4px; /* Smaller margin */
+        }
+
+        #bookingModal input,
+        #bookingModal select {
+            font-size: 12px; /* Smaller input text */
+            padding: 8px 10px; /* Smaller padding */
+            height: 36px; /* Smaller height */
+            border-radius: 6px;
+        }
+
+        #bookingModal .departure-options {
+            gap: 8px; /* Smaller gap */
+            margin-top: 6px; /* Smaller margin */
+        }
+
+        #bookingModal .departure-btn {
+            flex: 1 1 100%;
+            padding: 8px; /* Smaller padding */
+            font-size: 12px; /* Smaller text */
+            border-radius: 6px;
+            min-height: 36px; /* Smaller height */
+        }
+
+        #bookingModal .checkbox-wrapper {
+            margin-top: 6px; /* Smaller margin */
+        }
+
+        #bookingModal .checkbox-wrapper input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+        }
+
+        #bookingModal .checkbox-wrapper input[type="checkbox"]:checked::after {
+            font-size: 12px;
+        }
+
+        #bookingModal .checkbox-wrapper label {
+            font-size: 12px; /* Smaller text */
+        }
+
+        #bookingModal .checkbox-wrapper .contact-methods {
+            margin-left: 3px;
+        }
+
+        #openModalBtn {
+            padding: 6px 12px; /* Smaller padding */
+            font-size: 12px; /* Smaller text */
+            border-radius: 6px;
+        }
+
+        #closeModalBtn {
+            top: 8px; /* Adjusted position */
+            right: 8px;
+            font-size: 16px; /* Smaller close button */
+            width: 20px;
+            height: 20px;
+        }
+
+        #bookingModal .btn {
+            padding: 8px 16px; /* Smaller padding */
+            font-size: 13px; /* Smaller text */
+            margin: 0 10px 0 0;
+            border-radius: 6px;
+        }
+
+        #bookingModal .error-message {
+            font-size: 11px; /* Smaller error text */
+            margin-top: 4px; /* Smaller margin */
+        }
+    }
+</style>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="bookingModal">
+        <div class="modal-header">
+            <h4>GET FULL DETAILS FROM OUR TOUR EXPERT</h4>
+            <button id="closeModalBtn" onclick="toggleModal(false)">×</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookingForm">
+                <!-- First row: Name and Email -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" class="required">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                        <div class="error-message" id="nameError">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+                <!-- Second row: Phone and Adults -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" class="required">Phone Number</label>
+                        <input type="tel" id="phoneModal" name="phone" required placeholder="Your contact number">
+                        <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="adultCount">Number of Adults</label>
+                        <select id="adultCount" name="adultCount" required>
+                            <option value="">Select number of adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Third row: Package Type -->
+                <div class="form-group full-width">
+                    <label for="packageType">Package Type</label>
+                    <select id="packageType" name="packageType" required>
+                        <option value="">Select package type</option>
+                        <option value="2star">2 Star Hotel</option>
+                        <option value="3star">3 Star Hotel</option>
+                        <option value="4star">4 Star Hotel</option>
+                        <option value="5star">5 Star Hotel</option>
+                    </select>
+                </div>
+                <!-- Fourth row: Departure Options -->
+                <div class="form-group full-width">
+                    <label>Departure Date Preference</label>
+                    <div class="departure-options">
+                        <div class="departure-btn" id="fixed" data-value="FIXED">FIXED</div>
+                        <div class="departure-btn" id="flexible" data-value="FLEXIBLE">FLEXIBLE</div>
+                        <div class="departure-btn" id="anytime" data-value="ANYTIME">ANYTIME</div>
+                    </div>
+                    <input type="hidden" id="departureType" name="departureType" required>
+                </div>
+                <!-- Fifth row: Contact Preferences -->
+                <!-- <div class="form-group full-width">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" checked id="contactMethod" name="contactMethod" value="all" required>
+                        <label for="contactMethod">
+                            Yes, connect with me on
+                            <span class="contact-methods">WhatsApp, Email, Text and Call</span>
+                        </label>
+                    </div>
+                    <div class="error-message" id="contactMethodError">Please confirm your contact preference</div>
+                </div> -->
+                <div class="form-group full-width">
+                    <span>By clicking submit, you agree with our <a href="privacy-policy.html" style="color: #00C853;">Privacy Policy</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn" id="submitBtn">Submit</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modalOverlay = document.getElementById("modalOverlay");
+
+// ✅ Function to toggle modal visibility
+function toggleModal(show) {
+  if (show) {
+    modalOverlay.classList.add("active");
+  } else {
+    modalOverlay.classList.remove("active");
+  }
+}
+
+// ✅ Close modal if clicking outside the modal content
+modalOverlay.addEventListener("click", function (e) {
+  if (e.target === modalOverlay) {
+    toggleModal(false);
+  }
+});
+
+// ✅ Handle departure option button logic
+const departureButtons = document.querySelectorAll(".departure-btn");
+const departureInput = document.getElementById("departureType");
+
+departureButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    departureButtons.forEach((btn) => btn.classList.remove("active"));
+    this.classList.add("active");
+    departureInput.value = this.getAttribute("data-value");
+    document.getElementById("departureTypeError").style.display = "none";
+  });
+});
+
+// ✅ Form submission validation
+document.getElementById("submitBtn").addEventListener("click", function () {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phoneModal").value;
+  const adultCount = document.getElementById("adultCount").value;
+  const packageType = document.getElementById("packageType").value;
+  const departureType = document.getElementById("departureType").value;
+
+  let isValid = true;
+
+  if (!name) {
+    document.getElementById("nameError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("nameError").style.display = "none";
+  }
+
+  if (!phone) {
+    document.getElementById("phoneError").style.display = "block";
+    isValid = false;
+  } else {
+    document.getElementById("phoneError").style.display = "none";
+  }
+
+  if (isValid) {
+    const formData = {
+      name,
+      email,
+      phone,
+      adultCount,
+      packageType,
+      departureType,
+    };
+    console.log("Form Data:", formData);
+    var templateParams = {
+      from_name: name,
+      email_id: email,
+      contact_no: phone,
+      website: "Uttarakhand Tour Packages",
+      number_of_travelers: adultCount,
+      date_of_travel: departureType,
+      package_type: packageType,
+    };
+
+    emailjs
+      .send(
+        "service_v2o5j0l",
+        "template_apvv4kv",
+        templateParams,
+        "3w5lxrQSjLVVLUx6_",
+      )
+      .then(
+        function (response) {
+          swal("Good job!", "Your Response Has been submited!", "success");
+          document.getElementById("fullName").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("phone").value = "";
+          document.getElementById("message").value = "";
+          document.getElementById("submitbutton").disabled = false;
+        },
+        function (error) {
+          swal("Sorry!", "Its not your fault!", "error");
+        },
+      );
+    toggleModal(false); // Close modal after submission
+  }
+});
+</script>
+
 </head>
 
 <body>
@@ -1718,6 +2326,8 @@ Our thoughtfully crafted travel packages feature visits to iconic Uttarakhand de
         </section>
     </main>
 
+
+
     <footer>
         <div class="Wrapper">
             <div class="footer-container">
@@ -1918,7 +2528,16 @@ Our thoughtfully crafted travel packages feature visits to iconic Uttarakhand de
                         </div>
                         <span>Call Us</span>
                     </a>
-                    
+                    <a href="#" onclick="toggleModal(true)" class="btn pbtn" style="background-color: #2e316c;">
+                        <div class="ico">
+                           <svg fill="#000000" width="20" height="20" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>form-line</title>
+    <path d="M21,12H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H21a1,1,0,0,1,1,1v4A1,1,0,0,1,21,12ZM8,10H20V7.94H8Z" class="clr-i-outline clr-i-outline-path-1"></path><path d="M21,14.08H7a1,1,0,0,0-1,1V19a1,1,0,0,0,1,1H18.36L22,16.3V15.08A1,1,0,0,0,21,14.08ZM20,18H8V16H20Z" class="clr-i-outline clr-i-outline-path-2"></path><path d="M11.06,31.51v-.06l.32-1.39H4V4h20V14.25L26,12.36V3a1,1,0,0,0-1-1H3A1,1,0,0,0,2,3V31a1,1,0,0,0,1,1h8A3.44,3.44,0,0,1,11.06,31.51Z" class="clr-i-outline clr-i-outline-path-3"></path><path d="M22,19.17l-.78.79A1,1,0,0,0,22,19.17Z" class="clr-i-outline clr-i-outline-path-4"></path><path d="M6,26.94a1,1,0,0,0,1,1h4.84l.3-1.3.13-.55,0-.05H8V24h6.34l2-2H7a1,1,0,0,0-1,1Z" class="clr-i-outline clr-i-outline-path-5"></path><path d="M33.49,16.67,30.12,13.3a1.61,1.61,0,0,0-2.28,0h0L14.13,27.09,13,31.9a1.61,1.61,0,0,0,1.26,1.9,1.55,1.55,0,0,0,.31,0,1.15,1.15,0,0,0,.37,0l4.85-1.07L33.49,19a1.6,1.6,0,0,0,0-2.27ZM18.77,30.91l-3.66.81L16,28.09,26.28,17.7l2.82,2.82ZM30.23,19.39l-2.82-2.82L29,15l2.84,2.84Z" class="clr-i-outline clr-i-outline-path-6"></path>
+    <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+</svg>
+                        </div>
+                        <span>GET OFFERS</span>
+                    </a>
                 </div>
             </div>
         </div>
